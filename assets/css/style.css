@@ -1,0 +1,25 @@
+:root {
+    --color1: #394AB5;
+    --color2: #54C4C3;
+    --color3: #FED593;
+    --color4: #0C0B16;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.quiz-container h1 {
+    text-align: center;
+    padding: 20px 0;
+}
