@@ -4,22 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="./code-quiz/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <!-- Header for High Scores and Time -->
     <header>
-        <p>View High Scores</p>
-        <p>Time Left</p>
+        <a href="./high-scores.html">View High Scores</a>
+        <div id='timer'>
+            Time Left: <span id='timeLeft'>0</span>
+        </div>
     </header>
 
-    <!-- Main Body for Quiz -->
-    <div class='quiz-container'>
-        <h1>Coding Quiz Challenge</h1>
+    <!-- Main Body of Page -->
+    <main>
 
-    </div>
-    <script src="./code-quiz/assets/js/script.js"></script>
-    <script src="./code-quiz/assets/js/questions.js"></script>
-    <script src="./code-quiz/assets/js/scores.js"></script>
+        <!-- Opening/Welcome Display -->
+        <div class='start' id='opening-screen'>
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <div class='button-container'>
+                <button id='start-quiz' class='btn'>Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Questions Display -->
+        <div id='questions-display'>
+            <div id='questions'>
+                <div id='actual-question-text'></div>
+            </div>
+        </div>
+
+        <!-- Quiz Finished Display -->
+        <div id='quiz-finished'>
+            <h1>All Done!</h1>
+            <h2>Your Final Score is:</h2>
+            <h3>Enter Initials:
+            <button>Submit</button>
+            </h3>
+        </div>
+
+        <!-- High Scores Display -->
+        <div id='high-scores'>
+
+        </div>
+
+        <!-- JavaScript Sources -->
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/questions.js"></script>
+        <script src="./assets/js/scores.js"></script>
+
+    </main>
 </body>
 </html>

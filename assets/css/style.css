@@ -1,8 +1,9 @@
 :root {
-    --color1: #394AB5;
-    --color2: #54C4C3;
-    --color3: #FED593;
-    --color4: #0C0B16;
+    --color1: #173F5F;
+    --color2: #20639B;
+    --color3: #3caea3;
+    --color4: #f6d55c;
+    --color5: #ed553b;
 }
 
 * {
@@ -10,16 +11,62 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--color3);
 }
 
+/* Header Styles - High Scores and Time Remaining */
 header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px;
+    text-shadow: 1px 1px 2px var(--color1);
 }
 
-.quiz-container h1 {
+header a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+header a:hover {
+    color: var(--color4);
+}
+
+header #timer {
+    color: var(--color1);
+}
+
+/* Main Body Styles */
+#opening-screen h1 {
     text-align: center;
     padding: 20px 0;
+}
+
+#opening-screen p {
+    text-align: center;
+    font-size: 22px;
+    padding: 0 300px;
+}
+
+#opening-screen button {
+    font-size: 22px;
+    background-color: var(--color1);
+    color: var(--color5);
+    padding: 10px;
+    margin: 20px;
+}
+
+/* .button-container {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 45%;
+} */
+
+.start{
+    text-align: center;
+}
+
+.hide {
+    display: none;
 }
