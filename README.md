@@ -4,4 +4,6 @@ The purpose of this app was to create a coding quiz which could be used to test 
 
 <b><a href="https://github.com/emarshall121/code-quiz">GitHub Repository</b>
 
-Deployed Application
+<b><a href="https://emarshall121.github.io/code-quiz/">Deployed Application</b>
+  
+<a href="https://i.gyazo.com/ced344d9100b57be0e1d7817c8d69c2e.png">Screenshot of Application
